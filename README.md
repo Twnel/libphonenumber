@@ -1,9 +1,9 @@
 # libphonenumber
 
-## Install
-    npm install libphonenumber-node
+Library that allows to check if a phone number is valid and other functions such as country, type and formatting.
+It is a fork used by Twnel to update the library with latest phone number standards.
 
-## Use
+## Getting Started
 
 ```js
 var libphonenumber = require('libphonenumber-node');
@@ -31,3 +31,46 @@ console.log(libphonenumber.getType('+12125555555')); // FIXED_LINE_OR_MOBILE
 ## Update
 
 Typing `make` should sync the code with the latest official [libphonenumber](https://github.com/googlei18n/libphonenumber).
+
+### Prerequisites
+
+- libphonenumber-node
+
+### Installing
+
+```
+npm install libphonenumber-node
+```
+
+## Running the tests
+
+```
+npm test
+```
+
+## Deployment
+
+Since it is a lib, it can be referenced by other projects. Example:
+
+```
+[...]
+"libphonenumber-node": "git://github.com/Twnel/libphonenumber",
+[...]
+```
+
+## Built With
+
+* [libphonenumber](https://www.npmjs.com/package/libphonenumber-node) - Google Node Lib for Phone Numbers
+
+## Contributing
+
+You are always welcome to share your commits and features!
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see project tags.
+
+## Authors
+
+- https://github.com/elad
+- Jonathan Valencia
